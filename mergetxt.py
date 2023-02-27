@@ -1,4 +1,3 @@
-# os module consists of many functions about file and directory processing
 import os
 # 获取目标文件夹的路径
 meragefiledir = './src'

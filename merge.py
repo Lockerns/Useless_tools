@@ -1,4 +1,3 @@
-# os module consists of many functions about file and directory processing
 import os
 from docx import Document
 
