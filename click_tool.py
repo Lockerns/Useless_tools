@@ -1,3 +1,4 @@
+# 循环点击选中的两个点
 import pyautogui
 import time
 
