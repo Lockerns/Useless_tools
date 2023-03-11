@@ -10,11 +10,13 @@ text = pyperclip.paste()
 # 重复读取
 while (True):
     read_text = pyperclip.paste()
-    if text != read_text:
-        # 将多重空格和换行改成单一的空格
-        str_new = space_d.sub(' ', read_text)
-        # 放回剪切板
-        pyperclip.copy(str_new)
-        text = pyperclip.paste()
-    # 休眠0.5秒
+    # 判断读到的剪贴板内容是不是文本：
+    if (len(read_text) != 0):
+        if text != read_text:
+            # 将多重空格和换行改成单一的空格
+            str_new = space_d.sub(' ', read_text)
+            # 放回剪切板
+            pyperclip.copy(str_new)
+            text = pyperclip.paste()
+        # 休眠0.5秒
     time.sleep(0.5)
